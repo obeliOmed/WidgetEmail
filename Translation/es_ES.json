@@ -1,0 +1,5 @@
+{
+    "email": "Email",
+    "invalid-email": "El formato del email no es válido",
+    "disposable-email-warning": "Aviso: este email parece ser desechable o temporal"
+}

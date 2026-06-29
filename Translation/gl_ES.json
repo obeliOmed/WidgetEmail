@@ -1,0 +1,5 @@
+{
+    "email": "Correo electrónico",
+    "invalid-email": "O formato do correo electrónico non é válido",
+    "disposable-email-warning": "Aviso: este correo electrónico parece ser desbotable ou temporal"
+}
