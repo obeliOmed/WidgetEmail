@@ -1,0 +1,22 @@
+{
+    "name": "obeliomed/facturascripts-widget-email",
+    "description": "Email validator widget for FacturaScripts forms",
+    "type": "library",
+    "license": "GPL-3.0-only",
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0 || ^10.0 || ^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "FacturaScripts\\Plugins\\WidgetEmail\\": ""
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FacturaScripts\\Plugins\\WidgetEmail\\Test\\": "Test/"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php"
+         colors="true"
+         stopOnError="false"
+         stopOnFailure="false">
+    <testsuites>
+        <testsuite name="Validator (standalone)">
+            <file>Test/EmailValidatorTest.php</file>
+        </testsuite>
+        <testsuite name="Widget (requires FacturaScripts)">
+            <file>Test/WidgetEmailTest.php</file>
+        </testsuite>
+    </testsuites>
+</phpunit>
