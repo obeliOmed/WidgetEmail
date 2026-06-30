@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace FacturaScripts\Plugins\WidgetEmail;
 
-use FacturaScripts\Core\Base\InitClass;
+use FacturaScripts\Core\Template\InitClass;
 
 /**
  * Plugin lifecycle hooks. Widget auto-registration is handled by FacturaScripts PluginsDeploy
