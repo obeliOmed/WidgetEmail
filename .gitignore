@@ -1,3 +1,42 @@
-vendor/
-composer.lock
-.phpunit.result.cache
+# Directorios de NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Archivos temporales
+*.class
+*.log
+*.tmp
+*.bak
+*.swp
+*~.nib
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Archivos de configuración del IDE
+*.iml
+*.ipr
+*.iws
+
+# Archivos generados por Maven o Gradle
+target/
+out/
+
+# Librerías externas (si están incluidas en el proyecto)
+libs/
+
+# Ignorar paquetes comprimidos
+*.zip
+*.tar.gz
+*.rar
+*.7z
+nbproject/project.properties
+/nbproject
