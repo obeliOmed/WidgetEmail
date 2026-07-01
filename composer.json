@@ -1,5 +1,5 @@
 {
-    "name": "obeliomed/facturascripts-widget-email",
+    "name": "obeliomed/widget-email",
     "description": "Email validator widget for FacturaScripts forms",
     "type": "library",
     "license": "GPL-3.0-only",
