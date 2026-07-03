@@ -6,6 +6,7 @@ namespace FacturaScripts\Plugins\WidgetEmail\Lib\Widget;
 use FacturaScripts\Core\Lib\AssetManager;
 use FacturaScripts\Core\Lib\Widget\BaseWidget;
 use FacturaScripts\Core\Tools;
+use FacturaScripts\Plugins\WidgetEmail\Lib\DisposableEmailDomains;
 
 /**
  * Email input widget for FacturaScripts XMLView forms.
@@ -38,6 +39,10 @@ class WidgetEmail extends BaseWidget
         $class = $this->combineClasses($this->css('form-control'), $this->class, $extraClass);
         $value = $this->escapeHtml((string)($this->value ?? ''));
 
+        // Disposable domain list is injected here (single source of truth: PHP) so
+        // email-widget.js never carries its own copy that could drift out of sync.
+        $disposableJson = $this->escapeHtml(json_encode(DisposableEmailDomains::DOMAINS));
+
         $input = '<input type="email"'
             . ' name="' . $this->fieldname . '"'
             . ' value="' . $value . '"'
@@ -45,6 +50,7 @@ class WidgetEmail extends BaseWidget
             . ' maxlength="254"'
             . ' autocomplete="email"'
             . ' data-email-validate="1"'
+            . " data-disposable-domains='" . $disposableJson . "'"
             . $this->inputHtmlExtraParams()
             . '/>';
 
