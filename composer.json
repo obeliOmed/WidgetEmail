@@ -18,5 +18,8 @@
         "psr-4": {
             "FacturaScripts\\Plugins\\WidgetEmail\\Test\\": "Test/"
         }
+    },
+    "scripts": {
+        "test": "../vendor/bin/phpunit -c phpunit.xml"
     }
 }
